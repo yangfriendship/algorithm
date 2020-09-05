@@ -1,0 +1,37 @@
+package basic100;
+
+//최빈수 구하기
+public class basic3 {
+	//1 2 2 3 1 4 2 2 4 3 5 3 2
+
+	public static void main(String[] args) {
+		
+		String str = "1 2 2 3 1 4 2 2 4 3 5 3 2";
+		String[] str2 = str.split(" ");
+
+		int[] inputNum = new int[str2.length];
+		int[] count = new int[10];
+		
+		for(int i = 0 ; i< str2.length ; i++) {
+			inputNum[i] = Integer.parseInt(str2[i]);
+		}
+		//배열작업 굳이 할 필요는 없음
+		
+		
+		for(int i =0; i<inputNum.length ; i++) {
+			count[inputNum[i]] = count[inputNum[i]]+1;
+		}
+
+		int index = 0;
+		for (int i = 0; i < count.length-1; i++) {
+		
+			if (count[i]<count[i+1]) {
+				index = i+1;
+			}
+		}
+			System.out.println("최빈수 : " +index +" 출현횟수 : " + count[index]);
+		
+	}
+	
+
+}

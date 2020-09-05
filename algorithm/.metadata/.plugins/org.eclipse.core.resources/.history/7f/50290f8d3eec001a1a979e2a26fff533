@@ -1,0 +1,22 @@
+package basic100;
+
+//각 자리수 합 구하기
+//input : 1242
+//answer : 9
+public class basic9 {
+
+	public static void main(String[] args) {
+		
+		int input = 1242;
+		String str = Integer.toString(input);
+		String[] arr = new String[str.length()];
+		int result = 0;
+		for(int i=0; i<str.length() ; i++) {
+			
+			char value=((char)str.charAt(i));
+			int value1=((char)str.charAt(i));
+			result += value1;
+		}
+		System.out.println(result);
+	}//
+}

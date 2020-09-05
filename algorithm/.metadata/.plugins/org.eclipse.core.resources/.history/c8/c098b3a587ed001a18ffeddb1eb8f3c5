@@ -1,0 +1,29 @@
+package basic100;
+
+public class basic25 {
+
+	public static void main(String[] args) {
+		
+		int input = 26;
+		int count = 0;
+		int sum = 0;
+		
+		int temp= input;
+		
+		int pre = input/10;
+		int next = input%10;
+		
+		
+		while(input!=sum) {
+			
+			sum = pre + next ;
+			
+			
+			
+		}
+		
+		
+	}
+	
+	
+}

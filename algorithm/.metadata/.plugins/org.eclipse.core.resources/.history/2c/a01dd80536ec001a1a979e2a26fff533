@@ -1,0 +1,24 @@
+package basic100;
+
+//소수 판별
+public class basic7_boolean {
+
+	public static void main(String[] args) {
+		
+		int input = 17;
+		int count =0;
+		for(int i=1; i<input+1 ; i++) {
+			if(input%i==0) {
+				count ++;
+			}
+		}
+		System.out.println(count);
+		if(count==2) {
+			System.out.println("소수입니다.");
+		}else {
+			System.out.println("소수가 아닙니다.");
+		}
+		
+	}//
+	
+}

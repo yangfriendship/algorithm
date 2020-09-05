@@ -1,0 +1,21 @@
+package basic100;
+
+//10 -> 2진수 변환
+public class basic4 {
+
+	public void upAndDown() {
+		
+	}
+	
+
+	public static void main(String[] args) {
+		
+		int num = 19;
+		
+		
+		
+		
+		
+	}
+
+}

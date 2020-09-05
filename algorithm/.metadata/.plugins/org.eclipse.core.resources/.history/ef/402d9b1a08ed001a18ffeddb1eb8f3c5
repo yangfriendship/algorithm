@@ -1,0 +1,62 @@
+package basic100;
+
+//중복된 수 제거
+public class basic21 {
+
+	public static int[] getList(String input) {
+		input = input.replace(" ", "");
+		int[] list = new int[input.length()];
+
+		for (int i = 0; i < list.length; i++) {
+			list[i] = input.charAt(i) - '0';
+		}
+		return list;
+	}
+
+	// "1 2 3 1 1 77 3 4 5";
+	public static int[] getList1(String input) {
+		int start = 0;
+		int end = 0;
+		int index = 0;
+		int[] list = new int[input.replace(" ", "").length()];
+		for (int i = 0; i < input.length(); i++) {
+
+			if (input.charAt(i) - ' ' == 0) {
+				list[index] = Integer.parseInt(input.substring(start, i));
+				index++;
+				start = i + 1;
+			} else {
+
+			}
+		}
+
+		return list;
+	}
+
+	public static void main(String[] args) {
+		String input = "1 2 3 1 1 77 3 4 5";
+
+		int[] list = getList1(input);
+		int[] result = new int[10];
+
+//		for (int i = 0; i < list.length; i++) {
+//			result[list[i]] += 1;
+//		}
+//
+//		for (int i = 0; i < result.length; i++) {
+//
+//			if (result[i] > 0) {
+//				System.out.printf("%2d", i);
+//			}
+//		}		//	  	
+
+		for (int item : list) {
+			System.out.printf("%2d\n", item);
+		}
+		System.out.println();
+		System.out.println(list[0]);
+		System.out.println(list[5]);
+
+	}
+
+}

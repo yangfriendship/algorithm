@@ -1,0 +1,30 @@
+package basic100;
+
+//중복된 수 제거
+public class basic21 {
+
+	public static int[] getList(String input) {
+		input = input.replace(" ", "");
+		int[] list = new int[input.length()];
+		
+		for (int i = 0; i < list.length; i++) {
+			list[i] = input.charAt(i)-'0';
+		}
+		return list;
+	}
+	
+
+	
+	public static void main(String[] args) {
+		String input = "1 2 3 1 1 2 3 4 5 5";
+		
+		int[] list =getList(input);
+		int[] result = new int[10];
+		
+		for (int i = 0; i < list.length; i++) {
+			result[list[i]] +=1;
+		}
+
+	}
+	
+}

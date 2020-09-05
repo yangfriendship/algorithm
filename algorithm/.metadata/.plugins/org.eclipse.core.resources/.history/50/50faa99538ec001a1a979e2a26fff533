@@ -1,0 +1,14 @@
+package basic100;
+
+//각 자리수 합 구하기
+//input : 1242
+//answer : 9
+public class basic9 {
+
+	public static void main(String[] args) {
+		
+		int input = 1242;
+		
+		
+	}//
+}

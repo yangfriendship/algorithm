@@ -1,0 +1,31 @@
+package basic100;
+
+public class basic20 {
+
+	//3의 배수일때 조건 2개
+	// i를 10으로 누고 나머지를 또 3으로 나눴을때 나머지가 0인 경우 
+	// i%10/3==0
+	// i를 10으로 나누고 또 그 수를 3으로나눴을때 나머지가 0인 경우 ex ) 3x,6x ..
+	// i/10%3==0
+	
+	public static void main(String[] args) {
+
+		int num = 100;
+		
+		
+		for (int i = 1; i < num+1; i++) {
+			
+			if ((i/10)%3==0 ||(i%10)%3==0 ) {
+				System.out.printf("%2s","짝");
+			}else {
+				System.out.printf("%2d",i);
+			}
+			
+			System.out.println();
+		}
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,40 @@
+package basic100;
+
+//Æç¸°µå·Ò
+//12321  return : ture
+//12345 return : false
+public class basic22 {
+
+	public static void main(String[] args) {
+
+		int input = 123454321;
+		int count = 0;
+		int temp = input;
+		boolean result = true;
+
+		while (temp != 0) {
+			if (temp != 0) {
+				count++;
+			}
+			temp = temp / 10;
+		}
+
+		int[] list = new int[count];
+		for (int i = 0; i < list.length; i++) {
+			list[i] = input % 10;
+			input = input / 10;
+		}
+		System.out.println((list.length / 2) + 1);
+		for (int i = 0; i < list.length; i++) {
+
+			if (list[i] != list[list.length - 1 - i]) {
+				result = false;
+			}
+
+		}
+
+		System.out.println(result);
+
+	}
+
+}

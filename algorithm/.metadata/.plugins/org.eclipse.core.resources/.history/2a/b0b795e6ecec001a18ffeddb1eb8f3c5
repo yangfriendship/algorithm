@@ -1,0 +1,16 @@
+package basic100;
+
+//14
+//숫자 개수 출력
+public class basic14_number {
+
+	public static void main(String[] args) {
+
+		int input = 421314218;
+
+		int[] result = new int[1];
+
+
+	}
+
+}

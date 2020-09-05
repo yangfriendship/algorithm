@@ -1,0 +1,15 @@
+package basic100;
+
+//소수 판별
+public class basic7 {
+
+	public static void main(String[] args) {
+		
+		int inputValue = 13;
+		int count =0;
+		for()
+		
+		
+	}//
+	
+}

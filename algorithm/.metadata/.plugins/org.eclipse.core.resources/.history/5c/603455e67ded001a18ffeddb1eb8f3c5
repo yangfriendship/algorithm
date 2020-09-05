@@ -1,0 +1,27 @@
+package basic100;
+//Æç¸°µå·Ò
+//12321  return : ture
+//12345 return : false
+public class basic22 {
+
+	public static void main(String[] args) {
+		
+		int input  = 12321;
+		int count = 0;
+		int temp = input;
+		boolean result = false;
+		
+		while(temp!=0) {
+			temp = temp/10;
+			if(temp!=0) {
+				count++;
+			}
+			
+		}
+		System.out.println(count);
+		
+	}
+	
+	
+}
+

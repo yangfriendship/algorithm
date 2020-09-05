@@ -1,0 +1,17 @@
+package basic100;
+
+//최대공약수
+//input : 12 18
+//answer : 6
+public class basic6_2 {
+
+	public static void main(String[] args) {
+
+		int answer = 0;
+		
+		int num = 12;
+		int num1 = 18;
+
+	
+	}//
+}

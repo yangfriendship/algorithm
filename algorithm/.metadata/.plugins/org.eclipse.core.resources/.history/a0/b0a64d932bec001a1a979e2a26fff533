@@ -1,0 +1,30 @@
+package basic100;
+//소문자 -> 대문자 , 대문자-> 소문자
+public class basic5 {
+
+	
+	public static void main(String[] args) {
+		
+		String input = "hello WorlD";
+		
+		char[] strList = new char[input.length()];
+
+		for(int i=0; i<input.length(); i++) {
+			strList[i] = input.charAt(i);
+		}
+
+		System.out.println("before");
+		for(char item : strList) {
+			System.out.print(item);
+		}
+		System.out.println("after");
+		
+		for(int i=0; i<strList.length ; i++) {
+			
+			
+		}
+		
+		
+		
+	}
+}

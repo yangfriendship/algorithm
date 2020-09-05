@@ -1,0 +1,39 @@
+package basic100;
+
+public class basic25 {
+
+	public static void main(String[] args) {
+
+		int input = 26;
+		int count = 0;
+		int sum = 0;
+
+		int temp = input;
+
+		int pre = 0;
+		int next = 0;
+
+		while (true) {
+				//input : 26	tem : 14
+			pre = temp / 10; 	//2	
+			next = temp % 10;	//6
+
+			sum = pre + next; 	// 8
+
+			temp = (next*10) + ((sum)% 10);	//6 + 8 = 14
+			
+			
+			
+
+			if (sum == input)
+				break;
+
+			count++;
+
+		}
+
+		System.out.println(count);
+
+	}
+
+}

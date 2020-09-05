@@ -1,0 +1,42 @@
+package basic100;
+
+//최대공약수
+//input : 12 18
+//answer : 6
+public class basic6 {
+
+	public static int[] divisor(int input) {
+		int[] arr = new int[input];
+		int count = 0;
+		for (int i = 1; i < arr.length; i++) { //1부터 시작해야한다!! 0으로 나눌 수 없다.
+			if (input % i == 0) {
+				arr[count] = i;
+				count++;
+			}
+		}
+
+		return arr;
+	}
+
+	public static void main(String[] args) {
+
+		int answer = 0;
+		
+		int num = 12;
+		int num1 = 18;
+
+		int[] arr = divisor(num);
+		int[] arr1 =divisor(num1);
+		
+		for(int i=0; i< arr.length ; i++) {
+			for(int j=0 ; j <arr1.length ; j ++) {
+				
+				if (arr[i]>arr1[j]) {
+					answer = arr[i];
+				}
+			}
+		}
+		System.out.println(answer);
+
+	}//
+}

@@ -1,0 +1,36 @@
+package programmers.level1;
+
+import java.util.Scanner;
+
+public class Lesson12930 {
+
+	public static String func(String str) {
+		String[] str2 = str.split("");
+		String answer = "";
+		int count = 0;
+		for (int i = 0; i < str2.length; i++) {
+
+			if (str2[i].equals(" ")) {
+				count = 0;
+				answer += str2[i];
+			} else if (count % 2 == 0) {
+				str2[i] = str2[i].toUpperCase();
+				answer += str2[i];
+				count++;
+			} else if (count % 2 != 0) {
+				str2[i] = str2[i].toLowerCase();
+				answer += str2[i];
+				count++;
+			}
+		}
+
+		return answer;
+
+	}
+
+	public static String main(String[] args) {
+		String str = "hello world youzheng";
+
+		return func(str);
+	}
+}

@@ -1,0 +1,13 @@
+package basic100;
+
+public class basic5 {
+
+	public static void intputArr (String str) {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

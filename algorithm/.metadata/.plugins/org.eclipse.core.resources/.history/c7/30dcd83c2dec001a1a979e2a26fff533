@@ -1,0 +1,33 @@
+package basic100;
+
+//소문자 -> 대문자 , 대문자-> 소문자
+public class basic5 {
+
+	public static void main(String[] args) {
+
+		String input = "hello WorlD";
+
+		String[] strList = new String[input.length()];
+
+		strList = input.split("");
+
+		System.out.println("before");
+		for (String item : strList) {
+			System.out.print(item);
+		}
+		System.out.println("\nafter");
+
+		for (int i = 0; i < strList.length; i++) {
+			if ((int) strList[i].charAt(0) >= 97 && (int) strList[i].charAt(0) <= 122) {
+				strList[i] = strList[i].toUpperCase();
+			} else if ((int) strList[i].charAt(0) >= 41 && (int) strList[i].charAt(0) <= 90) {
+				strList[i] = strList[i].toLowerCase();
+			}
+		}
+
+		for (String item : strList) {
+			System.out.print(item);
+		}
+
+	}
+}

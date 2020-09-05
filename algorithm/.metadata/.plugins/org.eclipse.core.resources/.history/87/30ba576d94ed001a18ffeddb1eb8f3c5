@@ -1,0 +1,33 @@
+package basic100;
+
+//¥ﬁ∆ÿ¿Ã
+public class basic27 {
+
+	
+	public static void main(String[] args) {
+		
+		int input = 5;
+		
+		
+		for (int i = 0; i < 2*input-1; i++) {
+			
+			
+			switch (i%4) {
+			case 0: // right
+				
+				break;
+
+			case 1:
+				break;
+				
+			}
+			
+			
+		}
+		
+		
+		
+	}
+	
+	
+}

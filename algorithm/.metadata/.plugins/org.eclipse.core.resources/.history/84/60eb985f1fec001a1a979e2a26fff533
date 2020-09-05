@@ -1,0 +1,17 @@
+package basic100;
+
+//최빈수 구하기
+public class basic3 {
+	//1 2 2 3 1 4 2 2 4 3 5 3 2
+
+	public static void main(String[] args) {
+		
+		String str = "1 2 2 3 1 4 2 2 4 3 5 3 2";
+		String[] str2 = str.split(" ");
+
+		System.out.println(str2);
+		
+	}
+	
+
+}
