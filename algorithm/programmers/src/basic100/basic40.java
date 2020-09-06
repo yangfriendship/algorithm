@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 //1만들기
@@ -15,46 +16,40 @@ import java.util.StringTokenizer;
 //런타임 에러만 해결 , 답은 잘 나온다
 public class basic40 {
 
-	static int[] results = new int[1000000];
-	static int a, b, c;
+	static int num;
 
 	public static int min(int a, int b, int c) {
 
 		return a < b ? a : b < c ? b : c;
 	}
 
-	public static void solve(int num) {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 
-		for (int i = 2; i <= num; i++) {
-			a = 99999;
-			b = 99999;
-			c = 99999; // 최솟값 초기화
+		int num = sc.nextInt();
 
-			if (i % 3 == 0) {
-				a = results[i / 3];
+		int[][] list = new int[num][3];
+
+		for (int i = 0; i < num; i++) {
+
+			for (int j = 0; j < 3; j++) {
+
+				list[i][j] = sc.nextInt();
 			}
-			if (i % 2 == 0) {
-				b = results[i / 2];
-			}
-			c = results[i - 1];
-
-			results[i] = min(a, b, c) + 1;
 		}
 
-	}
+		int[][] dp = new int[num + 1][3];
+		dp[0][0] = list[0][0];
+		dp[0][1] = list[0][1];
+		dp[0][2] = list[0][2];
+		for (int i = 1; i < num; i++) {
 
-	public static void main(String[] args) throws IOException {
+			dp[i][0] = Math.min(dp[i - 1][1], dp[i - 1][2]) + list[i][0];
+			dp[i][1] = Math.min(dp[i - 1][0], dp[i - 1][2]) + list[i][1];
+			dp[i][2] = Math.min(dp[i - 1][1], dp[i - 1][0]) + list[i][2];
+		}
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String input = "";
-		input = br.readLine();
-		StringTokenizer st = new StringTokenizer(input);
-		int num = Integer.parseInt(st.nextToken());
-		solve(num);
-
-		System.out.println(results[num]);
-
-		br.close();
+		System.out.println(min(dp[num - 1][0], dp[num - 1][1], dp[num - 1][2]));
 
 	}
 
