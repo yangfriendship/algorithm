@@ -17,7 +17,7 @@ public class basic27 {
 
 	public static void main(String[] args) {
 
-		int input = 5;
+		int input = 4;
 		int num = 1;
 		int x = 0;
 		int y = 0;
@@ -29,7 +29,7 @@ public class basic27 {
 
 			switch (i % 4) {
 			case 0: // right
-				for (int j = 0; j < f-1; j++) {
+				for (int j = 0; j < f; j++) {
 					result[y][x] = num;
 
 					num++;
@@ -40,29 +40,40 @@ public class basic27 {
 				f--;
 				break;
 
-			case 1: //under
-				for (int j = 0; j < f-1; j++) {
+			case 1: // under
+				for (int j = 0; j < f; j++) {
 					result[y][x] = num;
 
 					num++;
 					y++;
 				}
-				
-				x--;
+
 				y--;
+				x--;
+
 				break;
 			case 2:
-				for (int j = 0; j < f-1; j++) {
+				for (int j = 0; j < f; j++) {
 					result[y][x] = num;
 
+					x--;
 					num++;
-					y--;
 				}
-				
-				x--;
+
+				x++;
 				y--;
+				f--;
 				break;
 			case 3:
+				for (int j = 0; j < f; j++) {
+					result[y][x] = num;
+
+					y--;
+					num++;
+				}
+
+				x++;
+				y++;
 				break;
 
 			}
