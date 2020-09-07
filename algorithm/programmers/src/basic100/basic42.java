@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
 //3. -1
 
 //런타임 에러만 해결 , 답은 잘 나온다
-public class basic40 {
+public class basic42 {
 
 	static int num;
 

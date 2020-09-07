@@ -31,8 +31,8 @@ public class basic28 {
 
 	public static void main(String[] args) {
 
-		int num = 10;
-		int n = 2;
+		int num = 100;
+		int n = 16;
 
 		binary(num, n);
 
