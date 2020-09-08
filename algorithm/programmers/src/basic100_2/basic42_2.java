@@ -49,6 +49,5 @@ public class basic42_2 {
 
 		System.out.println(min(dp[0][num-1], dp[1][num-1], dp[2][num-1]));
 		
-		
 	}
 }
