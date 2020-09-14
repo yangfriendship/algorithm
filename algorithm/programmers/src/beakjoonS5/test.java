@@ -6,18 +6,14 @@ import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
 
 class test {
 
-public static void main(String[] args) {
-	
-	String str = "happyy";
+	public static void main(String[] args) {
 
-	char[] c = str.toCharArray();
-	
-	System.out.println(c[0] - 97);
-	System.out.println(c[1] - 97);
-	System.out.println(c[0] == c[1]);
-	
-	
-	
-}
+		String a = "a";
+		String b = "b";
+		String c = "c";
 
+		System.out.println(a.compareTo(b));
+		
+		
+	}
 }
