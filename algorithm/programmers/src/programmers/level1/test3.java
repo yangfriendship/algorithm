@@ -7,20 +7,18 @@ public class test3 {
 
 	public static void main(String[] args) {
 
-		String s = "Zbcdefg";
+		String[] str = {"1111", "333","1"};
 		
-        String[] arr = s.split("");
-        
-        Arrays.sort(arr);
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < arr.length; i++) {
-        	sb.append(arr[i]);
-		}
-        
-        sb.reverse();
-        System.out.println(new String(sb));
+		Arrays.sort(str, (s1, s2) -> s1.length() - s2.length());
 		
+		System.out.println(str[0]);
+		System.out.println(str[1]);
+		System.out.println(str[2]);
 		
+		String str1 = "abcdef";
+		String str2 = "abcd";
+		
+		str.equals(str2.substring(0,str1.length()));
 	}
 
 }
