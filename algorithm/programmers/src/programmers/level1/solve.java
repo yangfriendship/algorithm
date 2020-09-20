@@ -1,4 +1,4 @@
-package prm;
+package programmers.level1;
 
 import java.util.Scanner;
 import java.util.Stack;

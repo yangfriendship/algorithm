@@ -1,4 +1,4 @@
-package prm;
+package programmers.level1;
 
 public class Q12925 {
 
