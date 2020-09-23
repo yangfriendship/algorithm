@@ -30,3 +30,4 @@ public class beakjoon_1072 {
         }
         System.out.println(start);
     }
+}
