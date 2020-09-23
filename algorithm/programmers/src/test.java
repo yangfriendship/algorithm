@@ -1,29 +1,26 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.sql.Array;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
-		String[] str = {"aaab","bbba","ccca"};
-		int i= 3;
-		
-		
-		Arrays.sort(str,new Comparator<String>() {
+		Scanner sc = new Scanner(System.in);
 
-			@Override
-			public int compare(String o1, String o2) {
-				
-				return  o1.charAt(i)-o2.charAt(i);
-			}
-		});
-		
-		for (int j = 0; j < str.length; j++) {
-			System.out.printf("%s ", str[j]);
-		}
-		
+		long n = sc.nextInt();
+
+		long x = 1000000000 + n;
+		long y = 1 + n;
+		System.out.println((int) Math.floor(y * 100 / x));
+
 	}
-	
+
 }
