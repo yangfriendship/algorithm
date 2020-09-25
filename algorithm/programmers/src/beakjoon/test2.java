@@ -1,18 +1,19 @@
 package beakjoon;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class test2 {
 
 	public static void main(String[] args) {
 
-		
-		String str = " aabababa";
-		String str2="Baaababab";
-		String str3="aaababab";
-		
-		char[] c = str2.toCharArray();
+		Queue<Integer> que = new LinkedList<Integer>();
 
-		System.out.println((char)(c[0]+32));
-		
+		que.add(1);
+		que.offer(2);
+
+		System.out.println(que.add(3));
+		System.out.println(que.offer(4));
+
 	}
-	
 }

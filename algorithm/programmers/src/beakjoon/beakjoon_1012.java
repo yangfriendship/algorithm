@@ -16,7 +16,7 @@ public class beakjoon_1012 {
 		int num = Integer.parseInt(br.readLine());
 
 		for (int a = 0; a < num; a++) {
-			
+
 			StringTokenizer st = new StringTokenizer(br.readLine());
 
 			int m = Integer.parseInt(st.nextToken());
@@ -50,7 +50,7 @@ public class beakjoon_1012 {
 
 			}
 			System.out.println(r);
-			
+
 		}
 
 	}//
