@@ -46,7 +46,7 @@ public class beakjoon_1260 {
 //		}
 
 		dfs(arr, visit, v);
-		visit = new int[n+1];
+		visit = new int[n + 1];
 		bfs(arr, visit, v);
 		System.out.println(new String(stDfs));
 		System.out.println(new String(stBfs));
