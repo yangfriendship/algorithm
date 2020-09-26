@@ -28,13 +28,13 @@ public class beakjoon_7562 {
 
 			bfs(m, startX, startY, endX, endY);
 			sb.append(result);
-			if(i<n-1) {
-			sb.append("\n");
+			if (i < n - 1) {
+				sb.append("\n");
 			}
 
 		}
 		System.out.println(sb);
-		
+
 	}//
 
 	static int result = 0;
