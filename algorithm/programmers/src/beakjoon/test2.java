@@ -7,13 +7,21 @@ public class test2 {
 
 	public static void main(String[] args) {
 
-		Queue<Integer> que = new LinkedList<Integer>();
+		
+		int[] arr = new int[10];
+		System.out.println(arr[1]);
+		test(arr);
+		System.out.println(arr[1]);
+		test(arr);
 
-		que.add(1);
-		que.offer(2);
-
-		System.out.println(que.add(3));
-		System.out.println(que.offer(4));
-
+	}
+	
+	public static void test(int[] arr) {
+		if(arr[1]==5) {
+			System.out.println("5юс");
+		}
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = 5;
+		}
 	}
 }

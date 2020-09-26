@@ -15,9 +15,9 @@ public class beakjoon_4963 {
 		int h = 0;
 		String str = "";
 		int cnt = 0;
-		while(true) {
+		while (true) {
 			str = br.readLine();
-			if(str.equals("0 0")) {
+			if (str.equals("0 0")) {
 				System.out.println();
 				return;
 			}
