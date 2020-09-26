@@ -37,23 +37,20 @@ public class beakjoon_2644 {
 		}
 
 		bfs(arr, visit, a, b);
-		
-		if(father[b]==0) {
+
+		if (father[b] == 0) {
 			System.out.println(-1);
-		}else {
+		} else {
 			System.out.println(father[b]);
 		}
-		
 
 	}
 
-	static int cnt = 1;
 	static int[] father;
 
 	public static void bfs(int[][] arr, int[] visit, int root, int b) {
 
 		Queue<Integer> que = new LinkedList<Integer>();
-		int depth = root;
 		que.offer(root);
 		visit[root] = 1;
 		father[root] = 0;
