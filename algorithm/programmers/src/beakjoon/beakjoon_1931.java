@@ -21,18 +21,18 @@ public class beakjoon_1931 {
 
 		@Override
 		public int compareTo(Time time) {
-			
-			if(this.end > time.end) {
+
+			if (this.end > time.end) {
 				return 1;
 			} else if (this.end == time.end) {
-                if(this.start > time.start) {
-                    return 1;
-                } else {
-                    return -1;
-                }
-            } else {
-                return -1;
-            }
+				if (this.start > time.start) {
+					return 1;
+				} else {
+					return -1;
+				}
+			} else {
+				return -1;
+			}
 		}
 	}
 
