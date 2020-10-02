@@ -22,7 +22,6 @@ public class beakjoon_15904 {
 				System.out.println("I love UCPC");
 				return;
 			}
-
 		}
 		System.out.println("I hate UCPC");
 
