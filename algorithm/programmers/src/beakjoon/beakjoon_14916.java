@@ -4,22 +4,32 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class beakjoon_1439 {
+public class beakjoon_14916 {
 
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		char[] arr = (br.readLine()).toCharArray();
+		int n = Integer.parseInt(br.readLine());
 		int cnt = 0;
-		char temp = '2';
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] != temp) {
+		while (n > 0) {
+
+			if (n % 5 == 0) {
+				cnt += n / 5;
+				n = 0;
+				break;
+			} else {
+				n -= 2;
 				cnt++;
-				temp = arr[i];
 			}
 		}
-		System.out.println(cnt / 2);
+
+		if (n < 0) {
+			System.out.println(-1);
+		} else {
+			System.out.println(cnt);
+		}
 
 	}
+
 }
