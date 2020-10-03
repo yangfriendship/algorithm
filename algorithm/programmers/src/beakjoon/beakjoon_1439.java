@@ -11,22 +11,15 @@ public class beakjoon_1439 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		char[] arr = (br.readLine()).toCharArray();
-		char temp = '5';
-		int cnt = 0;
+		int cnt=0;
+		char temp = '2';
 		for (int i = 0; i < arr.length; i++) {
-
-			if (arr[i] != temp) {
-				cnt++;
+			if(arr[i] != temp ) {
+				cnt ++;
 				temp = arr[i];
 			}
 		}
-		System.out.println(cnt);
-		if (cnt == 0) {
-			System.out.println(1);
-		} else if (cnt == 1) {
-			System.out.println(0);
-		} else {
-			System.out.println(cnt - 2);
-		}
+		System.out.println(cnt/2);
+		
 	}
 }
