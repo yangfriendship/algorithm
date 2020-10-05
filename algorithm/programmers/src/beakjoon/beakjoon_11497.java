@@ -16,7 +16,7 @@ public class beakjoon_11497 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int testCase = Integer.parseInt(br.readLine());
 		for (int k = 0; k < testCase; k++) {
-			
+
 			int num = Integer.parseInt(br.readLine());
 			int[] arr = new int[num];
 			StringTokenizer st = new StringTokenizer(br.readLine());
@@ -65,9 +65,9 @@ public class beakjoon_11497 {
 			}
 
 			System.out.println(max);
-			
+
 		}
-		
+
 	}// main
 
 }
