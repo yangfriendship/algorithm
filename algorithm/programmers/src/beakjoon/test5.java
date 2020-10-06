@@ -1,12 +1,21 @@
 package beakjoon;
 
-public class test5 {
+import java.util.Collections;
+import java.util.Stack;
 
+public class test5 {
 	public static void main(String[] args) {
 
-		int a = 111111105;
+		Stack<Integer> stk = new Stack<Integer>();
 		
-		System.out.println(a/10);
-		
-	}
+		stk.add(2);
+		stk.add(3);
+		stk.add(1);
+		stk.add(1);
+		stk.add(7);
+		System.out.println(stk);
+		System.out.println(stk.peek());
+		System.out.println(stk.peek());
+		System.out.println(stk.peek());
+	}//main
 }
