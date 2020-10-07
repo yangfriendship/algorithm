@@ -1,21 +1,21 @@
 package beakjoon;
 
 import java.util.Collections;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class test5 {
 	public static void main(String[] args) {
 
-		Stack<Integer> stk = new Stack<Integer>();
-		
-		stk.add(2);
-		stk.add(3);
-		stk.add(1);
-		stk.add(1);
-		stk.add(7);
-		System.out.println(stk);
-		System.out.println(stk.peek());
-		System.out.println(stk.peek());
-		System.out.println(stk.peek());
+		Deque<Integer> que = new LinkedList<Integer>();
+		que.add(0);
+		que.addLast(1);
+		que.addLast(1);
+		que.addLast(1);
+		que.add(2);
+		que.addFirst(9);
+		que.pollFirst();
+		System.out.println(que);
 	}//main
 }
