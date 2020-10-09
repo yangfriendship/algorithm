@@ -2,10 +2,15 @@ package beakjoon;
 public class test5 {
 	public static void main(String[] args) {
 
-		String a = "a";
-		String ab = "ab";
+		char a = '(';
+		char b = ')';
+		char c = '[';
+		char d = ']';
 		
-		System.out.println(a.compareTo(ab));
+		System.out.println((int)a);
+		System.out.println((int)b);
+		System.out.println((int)c);
+		System.out.println((int)d);
 		
 		
 	}//main
