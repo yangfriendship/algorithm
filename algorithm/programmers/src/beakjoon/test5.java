@@ -1,21 +1,22 @@
 package beakjoon;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 import java.util.Stack;
 
 public class test5 {
 	public static void main(String[] args) {
 
 		
-		System.out.println((int)'(');
-		System.out.println((int)')');
+		List<String> list = new LinkedList<String>();
 		
-		Stack<Integer> stk = new Stack<Integer>();
-		stk.add(1);
-		stk.add(2);
-		System.out.println(stk.peek());
+		list.add("woojung");
+		list.add("yuejiao");
+		
+		System.out.println(list);
+		System.out.println(list.contains("woojung"));
+		System.out.println(list.remove("woojung"));
+		System.out.println(list);
+		
 	}//main
 }
