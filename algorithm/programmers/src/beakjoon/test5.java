@@ -10,13 +10,16 @@ public class test5 {
 		
 		List<String> list = new LinkedList<String>();
 		
-		list.add("woojung");
-		list.add("yuejiao");
+		String str = "L";
 		
-		System.out.println(list);
-		System.out.println(list.contains("woojung"));
-		System.out.println(list.remove("woojung"));
-		System.out.println(list);
+		switch (str) {
+		case "L":
+			
+			break;
+
+		default:
+			break;
+		}
 		
 	}//main
 }
