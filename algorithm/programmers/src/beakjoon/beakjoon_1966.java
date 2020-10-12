@@ -17,8 +17,8 @@ public class beakjoon_1966 {
 
 		StringTokenizer st = null;
 		StringBuffer sb = new StringBuffer();
-		while(T-- > 0) {
-			 st= new StringTokenizer(br.readLine());
+		while (T-- > 0) {
+			st = new StringTokenizer(br.readLine());
 			int n = Integer.parseInt(st.nextToken());
 			int index = Integer.parseInt(st.nextToken());
 			int[] arr = new int[n];
@@ -49,19 +49,19 @@ public class beakjoon_1966 {
 					} else {
 						cnt--;
 						answer++;
-						if(index==0) {
-							index = que.size()-1;
-						}else {
+						if (index == 0) {
+							index = que.size() - 1;
+						} else {
 							index--;
 						}
-						
+
 					}
 				}
 			}
-			sb.append(answer+"\n");
-			
+			sb.append(answer + "\n");
+
 		}
 		System.out.println(sb);
-	
+
 	}// main
 }
