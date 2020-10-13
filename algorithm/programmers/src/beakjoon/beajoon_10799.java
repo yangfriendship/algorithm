@@ -25,6 +25,7 @@ public class beajoon_10799 {
 					count++;
 				}
 			}
+			
 		}
 		System.out.println(count);
 	}
