@@ -27,7 +27,7 @@ public class beakjoon_2493 {
 		for (int i = 1; i < arr.length; i++) {
 
 			if (arr[stk.peek()] <= arr[i]) {
-				int down = stk.size()-1;
+				int down = stk.size() - 1;
 				while (arr[i] >= arr[stk.get(down)]) {
 					stk.pop();
 					down--;
