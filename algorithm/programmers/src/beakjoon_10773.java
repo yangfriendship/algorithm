@@ -12,20 +12,26 @@ public class beakjoon_10773 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int num = Integer.parseInt(br.readLine());
 		int[] input = new int[num];
-		int index = 0;
+		int idx = 0;
 		int value = 0;
 		int sum = 0;
 		for (int i = 0; i < num; i++) {
 			value = Integer.parseInt(br.readLine());
-			if(value ==0 && index !=0 ) {
-				index --;
+			if(value ==0 && idx !=0 ) {
+				idx --;
 			}else if(value !=0) {
-				input[index] = value;
-				index ++;
+
+				input[idx] = value;
+
+
+
+
+
+				idx ++;
 			}
 		}
 			
-			for (int i = 0; i < index; i++) {
+			for (int i = 0; i < idx; i++) {
 				sum += input[i];
 			}
 			System.out.println(sum);

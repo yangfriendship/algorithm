@@ -9,15 +9,14 @@ public class test2 {
 		int ans = 1;
 		for (int i = 0; i < carN.length; i++) {
 			if (i == 0) { 
-            // Ã¹¹øÂ° ¼ıÀÚÀÇ °æ¿ìÀÇ ¼ö
+            // Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 				if (carN[i] == 'c') {
 					ans *= 26;
 				} else {
 					ans *= 10;
 				}
 			} else {
-            //µÎ¹øÂ° ¼ıÀÚºÎÅÍÀÇ °æ¿ìÀÇ ¼ö
-				if (carN[i] == carN[i - 1]) 
+				if (carN[i] == carN[i - 1])
 					if (carN[i] == 'c') {
 						ans *= 25;
 					} else {
